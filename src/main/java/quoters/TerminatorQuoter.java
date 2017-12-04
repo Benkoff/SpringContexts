@@ -7,7 +7,7 @@ import javax.annotation.PostConstruct;
 /*
  * @author Ben Novikov on December 2017
  */
-@Data
+@Profiling
 public class TerminatorQuoter implements Quoter {
     @InjectRandomInt(min = 2, max = 7)
     private int repeat;
@@ -30,7 +30,7 @@ public class TerminatorQuoter implements Quoter {
     @Override
     public void sayQuote() {
         for (int i = 0; i < repeat; i++) {
-            System.out.println("message = " + message);
+            System.out.println("message = " + message + " " + (i + 1));
         }
     }
 }

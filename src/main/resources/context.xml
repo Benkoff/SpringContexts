@@ -8,6 +8,7 @@
     <!-- bean definitions here -->
 
     <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+    <bean class="quoters.ProfilingHandlerBeanPostProcessor"/>
     <bean class="quoters.InjectRandomIntAnnotationBeanPostProcessor"/>
 
     <bean class="quoters.TerminatorQuoter" id="terminatorQuoter">
