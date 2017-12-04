@@ -9,5 +9,6 @@
     <bean class="quoters.TerminatorQuoter" id="terminatorQuoter">
         <property name="message" value="I'll be back"/>
     </bean>
+    <bean class="quoters.InjectRandomIntAnnotationBeanPostProcessor"/>
 
 </beans>
